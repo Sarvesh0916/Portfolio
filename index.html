@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/90d6fc7de0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="name">Sarvesh</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hello, I am <br><span> Sarvesh Mishra</span></h1>
+                <p>Web Developer</p>
+            </div>
+        </div>
+    </div>
+    <!-- About starts -->
+    <div id="about">
+        <div id="container" class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="/Images/pic3.jpeg" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi there, thanks for visiting my page. I am Sarvesh Mishra, currently I'm a third year BTech Student, pursuing my graduation from Lovely Professional University. <br> 
+                        I've spent my engineering years in learning skills such as web development and webpage designing. Currently I am a front-end web developer but I'm looking to learn back-end and thus completing Full-Stack web development as my next challenge. 
+                    </p>
+                    <div class="tab-title">
+                        <p class="tabs active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tabs" onclick="opentab('education')">Education</p>
+                        <p class="tabs" onclick="opentab('certifications')">Courses/Certifications</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Full Stack</span><br>WEB DEVELOPMENT</li>
+                            <li><span>Languages/Frameworks</span><br>C++, JS, React Js</li>
+                            <li><span>Softwares/Platforms</span><br>Windows, MS Office</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content " id="education">
+                        <ul>
+                            <li><span>B Tech CSE</span><br>2020-2024</li>
+                            <li><span>Intermediate</span><br>2018-2020</li>
+                            <li><span>Matriculation</span><br>2017-2018</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="certifications">
+                        <ul>
+                            <li><span><React-JS></React-JS> Training</span><br>by Programming Pathshala</li>
+                            <li><span>Front-End web Developer</span><br>by Board Infinity</li>
+                            <li><span>Front-End development</span><br>by SimpliLearn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -------projects section starts---------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Snake-Game</h2>
+                <p>A project based on the one of the popular games of all time, the Snake-game and brings the fun and simplicity of snake game. </p>
+                <a href="https://github.com/Sarvesh0916/Snake-Game" target="_blank">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-list"></i>
+                <h2>To-Do List</h2>
+                <p>A simple and working to-do list that allows the user to add his important tasks, reflects them back and also to delete the completed ones.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Hospital Suggester </h2>
+
+                <p>A webpage that suggests users a list of nearby hospitals, based on their localty and filtered using various diseases. </p>
+                <a href="https://github.com/Sarvesh0916/Hospital-suggester" target="_blank">Learn more</a>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+<!-- ----------portfolio starts---------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/Images/project1.jpeg" alt="">
+                <div class="layer">
+                    <h3>Snake-Game</h3>
+                    <p>Snake game made using python and its libraries</p>
+                    <a href="https://github.com/Sarvesh0916/Snake-Game" target="_blank"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></i></i></a>
+                
+                </div>
+            </div>
+            <div class="work">
+                <img src="/Images/project2.jpeg" alt="">
+                <div class="layer">
+                    <h3>To-Do App</h3>
+                    <p>To-Do List application designed using HTML,CSS and React JS</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></i></i></a>
+                
+                </div>
+            </div><div class="work">
+                <img src="/Images/project3.jpeg" alt="">
+                <div class="layer">
+                    <h3>Hospital Suggester</h3>
+                    <p>Hospital-suggester web-page project made using HTML, CSS and JS.</p>
+                    <a href="https://github.com/Sarvesh0916/Hospital-suggester" target="_blank"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></i></i></a>
+                
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Sarvesh0916" target="_blank"  class="btn">Know more</a>
+
+
+    </div>
+</div>
+<!-- -----------------cpntacts section starts------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>misshrasarvesh16@gmail.com</p>
+        <p><i class="fa-solid fa-phone-volume"></i>6386765823</p>
+        <div class="social-icons">
+        <a href="https://www.linkedin.com/in/sarvesh-mishra-410522202/ " target=”_blank”><i class="fa-brands fa-linkedin"></i></i></a>
+        <a href="https://twitter.com/Sarvesh50926597" target=”_blank”><i class="fa-brands fa-square-twitter"></i></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100023855988754" target=”_blank”><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/mishra_sarvesh9/" target=”_blank”><i class="fa-brands fa-instagram"></i></i></a>
+            <a href="https://github.com/Sarvesh0916" target=”_blank”><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="Images/Sarvesh Mishra's Resume-hackerresume (1).pdf" download class="btn btn2">Download CV</a>
+
+
+            </div>
+            <div class="contact-right"></div>
+        </div>
+    </div>
+    <div class="copyright"><p>Copyright © Sarvesh.</p></div>
+</div>
+
+   <script src="/script.js"></script>
+</body>
+
+</html>
